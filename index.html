@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <script defer src="app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Machine</title>
+</head>
+
+<body>
+ <!-- NAVBAR -->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <a id="header-title" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">MEME MACHINE</a>
+    </div>
+    </div>
+  </nav>
+ <!-- LIGHT AND DARK MODE -->
+  <div id="toggler">
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <div class="ball"></div>
+    </label>
+  </div>
+  <!-- LEFT MEMES SECTION -->
+  <div id="meme-container">
+    <div id="meme-nav-left">
+    </div>
+    <!-- CENTER DISPLAY SECTION -->
+    <div id="display-container">
+      <div id="meme-display">
+        <img id="meme-display-image" src="#" alt="meme img goes here">
+      </div>
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <button id="like">Add to Collection</button>
+        <br><br>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+    <!-- RIGHT MEMES SECTION -->
+    <div id="meme-nav-right">
+    </div>
+  </div>
+  <!-- FOOTER -->
+      <h5>© 2022 Copyright: 
+        <a class="text-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+          Deez Boiz
+        </a>
+      </h5>
+</body>
+</html>

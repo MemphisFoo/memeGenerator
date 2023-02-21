@@ -1,0 +1,202 @@
+/* TOGGLER */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/3161112.png');
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background-image: url('https://cdn.wallpapersafari.com/59/21/OCKw6S.jpg');
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+#toggler {
+  padding-left: 190px;
+}
+
+/* BUTTONS */
+#like {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#like:hover {
+  color: white;
+  background-color: black;
+}
+
+#next {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#next:hover {
+  color: white;
+  background-color: black;
+}
+
+#previous {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#previous:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ELEMENTS */
+.navbar-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#header-title {
+  color: white;
+  font-family: 'Rubik Moonrocks';
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+}
+
+#header-title:hover {
+  text-decoration: none;
+}
+
+
+#meme-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+#meme-nav-left {
+  width: 25%;
+  cursor: pointer;
+  border: 10px solid black
+}
+
+#meme-nav-right {
+  width: 25%;
+  cursor: pointer;
+  border: 10px solid black;
+}
+
+.meme-red-border {
+  border: solid red 4px !important;
+}
+
+#meme-nav-left img {
+  width: 75px;
+  height: 75px;
+  border: solid black 2px;
+  margin-left: 0.175em;
+  margin-right:0.175em;
+}
+
+#meme-nav-right img {
+  width: 75px;
+  height: 75px;
+  border: solid black 2px;
+  margin-left: 0.175em;
+  margin-right:0.175em;
+}
+
+#meme-display img {
+  height: 35vh;
+  border: solid black 3px;
+}
+
+#meme-display {
+  margin: 5px;
+}
+
+#buttons {
+  margin: 10px
+}
